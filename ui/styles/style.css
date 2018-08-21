@@ -1,0 +1,507 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #1E90FF;
+}
+
+button, input, textarea{
+	font-family: Trebuchet MS;
+}
+
+hr{
+	border-style: dashed;
+	border-color: #1E90FF;
+	margin: 10px;
+}
+
+header{
+	background: #1E90FF;
+	min-height: 80px;
+}
+
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+p{
+	text-align: justify;
+	margin: 10px;
+	clear: both;
+}
+
+header #siteName{
+	float: left;
+	margin: 20px;
+}
+
+header #siteName h1{
+	margin: 0;
+	color: #FFFFFF
+	
+}
+
+header nav{
+	float: right;
+	margin:  30px 40px;
+}
+
+header a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+
+header li{
+	display: inline;
+	margin: 0 5px 0 0;
+}
+
+
+
+section#main{
+	min-height: 400px;
+	margin: 10px 10px 20px 10px;
+	padding: 10px;
+}
+
+content#maincontent{
+	float: left;
+	width: 50%;
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	padding: 10px;
+}
+
+
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin: 0 0 20px 0;
+	padding: 10px;	
+}
+
+section #signinform{
+	margin: auto;
+	width: 70%;
+	min-height: 380px;
+}
+
+.formgroup{
+	margin: 20px;
+	padding: 0;
+	font-weight: bolder;		
+}
+
+.formgroup label{
+	color: #1E90FF;
+}
+
+.formgroup textarea{
+	border-radius: 5px;
+	height: 200px;
+	font-weight: bolder;
+	padding: 10px;
+	width: 80%;
+}
+
+textarea.questiontitle{
+	height: 20px;
+}
+
+.formgroup input{
+	border-radius: 5px;
+	height: 20px;
+	font-weight: bolder;
+	padding: 10px;
+	width: 80%;
+}
+
+.formgroup button{
+	margin: auto;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	background: #1E90FF;
+	cursor: pointer;
+}
+
+.formgroup p{
+	color: #1E90FF;
+}
+
+.formgroup a{
+	text-decoration: none;
+	color: #1E90FF;
+}
+
+.question{
+	margin: 5px;
+	padding: 5px;
+}
+
+.question a{
+	text-decoration: none;
+	color: #1E90FF;
+
+}
+
+li .questiondetails{
+	float: right;
+}
+
+li .questiondetailsAnswer{
+	background: #1E90FF;
+	color: #FFFFFF;
+	font-weight: bolder;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;	
+}
+
+li .vote{
+	margin: 0;
+	padding: 0;
+	color: #1E90FF;
+}
+
+li .voteup{
+
+	color: #7CCD7C;
+	font-weight: bolder;
+	font-size: 40px;
+	cursor: pointer;	
+	margin: 0;
+	padding: 0;
+	
+}
+
+li .votedown{	
+	
+	color: #FF0000;
+	font-weight: bolder;
+	font-size: 40px;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.answer{
+	clear: both;
+	margin: 5px;
+}
+
+#answerform{
+	clear: both;
+	margin: 20px;	
+}
+
+#answerform textarea{
+	height: 200px;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;	
+}
+
+#answerform button{
+	background: #1E90FF;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.postby{
+	
+	margin: 10px;
+	padding: 0;
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+.postby a{
+	text-decoration: none;
+	color: #1E90FF;
+}
+
+section#mainquestions{
+	margin: 20px;
+	padding: 10px;
+}
+
+#username{
+	background: #1E90FF;
+	margin: 0;
+	
+}
+
+#username hr{
+	margin: 0;
+	padding: 0;
+	border: 3px solid #FFFFFF;
+}
+
+#username h2{
+	height: 60px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 0 50px 0 0;	
+	padding: 20px 0 0 0;
+	text-align: right;
+}
+
+.userinfolabel{
+	background: #1E90FF;
+	color: #FFFFFF;
+	margin: 5px;
+	padding: 5px;
+	/*border-radius: 5px;*/
+	font-size: 18px;
+}
+
+.userinfo{	
+	color: #1E90FF;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 5px;
+}
+
+.usermostquestion{
+	margin: 5px;
+	padding: 5px;
+	color: #1E90FF;
+}
+
+#banner{
+	clear: both;
+	max-height: 200px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 7px solid #1E90FF;
+}
+
+#banner h2{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	margin: 10px;
+	width: 30%;
+	text-transform: uppercase;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+#banner button{
+	position: absolute;
+	bottom: 40px;
+	right: 50px;
+	background: #1E90FF;
+	color: #FFFFFF;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+
+
+.dropbtn{
+	display: none;
+}
+
+#banner a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+#profileimg{
+	
+	display: inline-block;
+  	max-width: 100%;
+  	height: 200px;
+  	padding: 4px;
+  	line-height: 1.42857143;
+  	background-color: #FFFFFF;
+  	border: 1px solid #DDDDDD;
+  	border-radius: 4px;  	
+}
+
+footer{
+	clear: both;
+	background: #1E90FF;
+	min-height: 60px;	
+}
+
+footer p{
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/*Media queries*/
+/*tablets*/
+@media screen and (max-width: 768px) {
+
+header nav{
+	float: none;
+	background: #1E90FF;
+	clear: both;
+	width: 100%;
+	margin: 0;
+}
+
+header nav ul{
+	border-top: 3px solid #FFFFFF;
+	border-bottom: 3px solid #FFFFFF;
+	margin: 20px 0 0 0;
+	padding: 5px;
+	text-align: center;
+}
+
+header nav ul li{
+	margin: 10px 40px;
+	width: 33.3%;
+	padding: 10px;
+}
+
+header #siteName{
+	margin: 0 20px;
+	float: none;
+}
+
+header #siteName h1{
+	text-align: center;
+}
+
+header a{
+	margin: 10px auto 0;	
+}
+
+.dropbtn{
+	display: none;
+}
+
+
+}
+
+/*mobile*/
+@media screen and (max-width: 660px) {
+
+li .questiondetails{
+	float: none;
+	margin: 10px auto 0;
+}
+
+hr{
+	margin: 0;
+}
+
+aside#sidebar{
+	float: none;
+	width: 100%;
+}
+
+
+content#maincontent{
+	float: none;
+	width: 100%;
+}
+
+#banner h2{
+	top: 20px;
+	width: 80%;
+}
+
+#banner button{
+	bottom: 20px;
+	width: 80%;
+}
+
+section #signinform{
+	width: 100%;
+}
+
+h2{
+	font-size: 20px;
+}
+
+.dropbtn {
+	display: block;
+	background: #1E90FF;
+	color: white;
+	padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E90FF;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+	display:block;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li{
+	border-top: 2px solid #FFFFFF;
+	width: 100%;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.formgroup textarea{
+	height: 80px;
+}
+
+textarea.questiontitle{
+	height: 20px;
+}
+
+.userinfo{
+	display: block;
+}
+
+}
+
