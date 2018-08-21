@@ -71,7 +71,7 @@ header li{
 
 
 section#main{
-	min-height: 400px;
+	min-height: 600px;
 	margin: 10px 10px 20px 10px;
 	padding: 10px;
 }
@@ -403,105 +403,634 @@ header a{
 }
 
 /*mobile*/
-@media screen and (max-width: 660px) {
+@media only screen 
+	
+	and (max-device-width: 600px) {
 
-li .questiondetails{
+	li .questiondetails{
+		float: none;
+		margin: 10px auto 0;
+	}
+
+	hr{
+		margin: 0;
+	}
+
+	aside#sidebar{
+		float: none;
+		width: 100%;
+	}
+
+
+	content#maincontent{
+		float: none;
+		width: 100%;
+	}
+
+	#banner h2{
+		top: 20px;
+		width: 80%;
+	}
+
+	#banner button{
+		bottom: 20px;
+		width: 80%;
+	}
+
+	section #signinform{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.dropbtn {
+		display: block;
+		background: #1E90FF;
+		color: white;
+		padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #1E90FF;
+	    width: 100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: #FFFFFF;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.show {
+		display:block;
+	}
+
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li{
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.formgroup textarea{
+		height: 80px;
+	}
+
+	textarea.questiontitle{
+		height: 20px;
+	}
+
+	.userinfo{
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 600px) {
+
+	li .questiondetails{
+		float: none;
+		margin: 10px auto 0;
+	}
+
+	hr{
+		margin: 0;
+	}
+
+	aside#sidebar{
+		float: none;
+		width: 100%;
+	}
+
+
+	content#maincontent{
+		float: none;
+		width: 100%;
+	}
+
+	#banner h2{
+		top: 20px;
+		width: 80%;
+	}
+
+	#banner button{
+		bottom: 20px;
+		width: 80%;
+	}
+
+	section #signinform{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.dropbtn {
+		display: block;
+		background: #1E90FF;
+		color: white;
+		padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #1E90FF;
+	    width: 100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: #FFFFFF;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.show {
+		display:block;
+	}
+
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li{
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.formgroup textarea{
+		height: 80px;
+	}
+
+	textarea.questiontitle{
+		height: 20px;
+	}
+
+	.userinfo{
+		display: block;
+	}
+
+}
+
+
+@media only screen 
+	and (min-device-width: 375px)
+	and (max-device-width: 667px)
+	 {
+
+	li .questiondetails{
+		float: none;
+		margin: 10px auto 0;
+	}
+
+	hr{
+		margin: 0;
+	}
+
+	aside#sidebar{
+		float: none;
+		width: 100%;
+	}
+
+
+	content#maincontent{
+		float: none;
+		width: 100%;
+	}
+
+	#banner h2{
+		top: 20px;
+		width: 80%;
+	}
+
+	#banner button{
+		bottom: 20px;
+		width: 80%;
+	}
+
+	section #signinform{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.dropbtn {
+		display: block;
+		background: #1E90FF;
+		color: white;
+		padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #1E90FF;
+	    width: 100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: #FFFFFF;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.show {
+		display:block;
+	}
+
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li{
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.formgroup textarea{
+		height: 80px;
+	}
+
+	textarea.questiontitle{
+		height: 20px;
+	}
+
+	.userinfo{
+		display: block;
+	}
+
+}
+
+/*Iphone 5*/
+/*@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	li .questiondetails{
 	float: none;
 	margin: 10px auto 0;
-}
+	}
 
-hr{
-	margin: 0;
-}
+	hr{
+		margin: 0;
+	}
 
-aside#sidebar{
+	aside#sidebar{
+		float: none;
+		width: 100%;
+	}
+
+
+	content#maincontent{
+		float: none;
+		width: 100%;
+	}
+
+	#banner h2{
+		top: 20px;
+		width: 80%;
+	}
+
+	#banner button{
+		bottom: 20px;
+		width: 80%;
+	}
+
+	section #signinform{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.dropbtn {
+		display: block;
+		background: #1E90FF;
+		color: white;
+		padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #1E90FF;
+	    width: 100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: #FFFFFF;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.show {
+		display:block;
+	}
+
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li{
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.formgroup textarea{
+		height: 80px;
+	}
+
+	textarea.questiontitle{
+		height: 20px;
+	}
+
+	.userinfo{
+		display: block;
+	}
+
+
+}*/
+
+/*Iphone 6*/
+/*@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	
+
+	li .questiondetails{
 	float: none;
-	width: 100%;
-}
+	margin: 10px auto 0;
+	}
+
+	hr{
+		margin: 0;
+	}
+
+	aside#sidebar{
+		float: none;
+		width: 100%;
+	}
 
 
-content#maincontent{
-	float: none;
-	width: 100%;
-}
+	content#maincontent{
+		float: none;
+		width: 100%;
+	}
 
-#banner h2{
-	top: 20px;
-	width: 80%;
-}
+	#banner h2{
+		top: 20px;
+		width: 80%;
+	}
 
-#banner button{
-	bottom: 20px;
-	width: 80%;
-}
+	#banner button{
+		bottom: 20px;
+		width: 80%;
+	}
 
-section #signinform{
-	width: 100%;
-}
+	section #signinform{
+		width: 100%;
+	}
 
-h2{
-	font-size: 20px;
-}
+	h2{
+		font-size: 20px;
+	}
 
-.dropbtn {
-	display: block;
-	background: #1E90FF;
-	color: white;
-	padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+	.dropbtn {
+		display: block;
+		background: #1E90FF;
+		color: white;
+		padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
 
-.dropdown{
-	position: relative;
-	display: inline-block;
-}
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1E90FF;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #1E90FF;
+	    width: 100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
 
-.dropdown-content a {
-    color: #FFFFFF;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+	.dropdown-content a {
+	    color: #FFFFFF;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
 
-.show {
-	display:block;
-}
+	.show {
+		display:block;
+	}
 
-header nav ul{
-	margin: 0;
-	padding: 0;
-}
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
 
-header nav ul li{
-	border-top: 2px solid #FFFFFF;
-	width: 100%;
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-}
+	header nav ul li{
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
 
-.formgroup textarea{
-	height: 80px;
-}
+	.formgroup textarea{
+		height: 80px;
+	}
 
-textarea.questiontitle{
-	height: 20px;
-}
+	textarea.questiontitle{
+		height: 20px;
+	}
 
-.userinfo{
-	display: block;
-}
+	.userinfo{
+		display: block;
+	}
 
-}
+}*/
 
+
+/*@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 667px) 
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+		
+		li .questiondetails{
+		float: none;
+		margin: 10px auto 0;
+		}
+
+		hr{
+			margin: 0;
+		}
+
+		aside#sidebar{
+			float: none;
+			width: 100%;
+		}
+
+
+		content#maincontent{
+			float: none;
+			width: 100%;
+		}
+
+		#banner h2{
+			top: 20px;
+			width: 80%;
+		}
+
+		#banner button{
+			bottom: 20px;
+			width: 80%;
+		}
+
+		section #signinform{
+			width: 100%;
+		}
+
+		h2{
+			font-size: 20px;
+		}
+
+		.dropbtn {
+			display: block;
+			background: #1E90FF;
+			color: white;
+			padding: 16px;
+		    font-size: 16px;
+		    border: none;
+		    cursor: pointer;
+		}
+
+		.dropdown{
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #1E90FF;
+		    width: 100%;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+
+		.dropdown-content a {
+		    color: #FFFFFF;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.show {
+			display:block;
+		}
+
+		header nav ul{
+			margin: 0;
+			padding: 0;
+		}
+
+		header nav ul li{
+			border-top: 2px solid #FFFFFF;
+			width: 100%;
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+		}
+
+		.formgroup textarea{
+			height: 80px;
+		}
+
+		textarea.questiontitle{
+			height: 20px;
+		}
+
+		.userinfo{
+			display: block;
+		}
+}*/
