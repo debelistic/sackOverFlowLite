@@ -71,8 +71,8 @@ header li{
 
 
 section#main{
-	min-height: 400px;
-	margin: 10px 10px 20px 10px;
+	min-height: 550px;
+	margin: 0;
 	padding: 10px;
 }
 
@@ -80,10 +80,18 @@ content#maincontent{
 	float: left;
 	width: 50%;
 	overflow: hidden;
+	margin: 20px;
+	padding: 20px;
+}
+
+
+content#profilecontent{
+	float: left;
+	width: 65%;
+	overflow: hidden;
 	margin: 0 0 20px 0;
 	padding: 10px;
 }
-
 
 aside#sidebar{
 	float: right;
@@ -92,9 +100,28 @@ aside#sidebar{
 	padding: 10px;	
 }
 
+#profileimgDiv{
+	background: red;
+	display: inline-block;
+	float: left;
+}
+
+ul#userbio{
+	
+	float: right;
+	display: inline-block;
+	width: 60%;
+	margin: 0 0 0 0;
+	padding: 10px;	
+}
+
+ul#userbio li{
+	width: 100%;
+}
+
 section #signinform{
 	margin: auto;
-	width: 70%;
+	width: 50%;
 	min-height: 380px;
 }
 
@@ -267,12 +294,12 @@ section#mainquestions{
 }
 
 .userinfolabel{
-	background: #1E90FF;
-	color: #FFFFFF;
+		
+	color: #1E90FF;
 	margin: 5px;
 	padding: 5px;
-	/*border-radius: 5px;*/
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: bolder;
 }
 
 .userinfo{	
@@ -330,6 +357,9 @@ section#mainquestions{
 	color: #FFFFFF;
 }
 
+#questionAnswerList{
+	padding: 10px;
+}
 
 #profileimg{
 	
@@ -350,6 +380,7 @@ footer{
 }
 
 footer p{
+	float: right;;
 	margin: auto;
 	padding: 20px;
 	text-align: center;
@@ -358,46 +389,84 @@ footer p{
 
 /*Media queries*/
 /*tablets*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 924px) {
 
-header nav{
-	float: none;
-	background: #1E90FF;
-	clear: both;
-	width: 100%;
-	margin: 0;
-}
+	header nav{
+		float: none;
+		background: #1E90FF;
+		clear: both;
+		width: 100%;
+		margin: 0;
+	}
 
-header nav ul{
-	border-top: 3px solid #FFFFFF;
-	border-bottom: 3px solid #FFFFFF;
-	margin: 20px 0 0 0;
-	padding: 5px;
-	text-align: center;
-}
+	header nav ul{
+		border-top: 3px solid #FFFFFF;
+		border-bottom: 3px solid #FFFFFF;
+		margin: 20px 0 0 0;
+		padding: 5px;
+		text-align: center;
+	}
 
-header nav ul li{
-	margin: 10px 40px;
-	width: 33.3%;
-	padding: 10px;
-}
+	header nav ul li{
+		margin: 0;
+		width: 33.3%;
+		padding: 10px;
+	}
 
-header #siteName{
-	margin: 0 20px;
-	float: none;
-}
+	header #siteName{
+		margin: 0 20px;
+		float: none;
+	}
 
-header #siteName h1{
-	text-align: center;
-}
+	header #siteName h1{
+		text-align: center;
+	}
 
-header a{
-	margin: 10px auto 0;	
-}
+	header a{
+		margin: 10px auto 0;	
+	}
 
-.dropbtn{
-	display: none;
-}
+	.dropbtn{
+		display: none;
+	}
+
+	content#profilecontent{
+		float: none;
+	}
+
+	ul#userbio{
+		float: none;
+		margin: 0 0 20px 0;
+	    padding: 10px;
+	}
+
+	div#profileimgDiv{
+		float: none;
+		margin: 0;
+	}
+
+	section#main{
+		float: none;
+		width: 100%
+	}
+
+	aside#sidebar{
+		float: none;
+		
+	}
+
+	#main{
+		margin: auto;
+		width: 70%;	
+	}
+
+	section#main{
+			padding: 0;
+		}
+
+	footer p{
+		float: none;
+	}
 
 
 }
@@ -416,7 +485,13 @@ header a{
 
 	aside#sidebar{
 		float: none;
-		width: 100%;
+		width: 60%;
+		margin: 0;
+		clear: both;
+	}
+
+	section#main{
+		padding: 0;
 	}
 
 
@@ -441,6 +516,7 @@ header a{
 
 	h2{
 		font-size: 20px;
+		padding: 10px;
 	}
 
 	.dropbtn {
@@ -502,6 +578,11 @@ header a{
 	.userinfo{
 		display: block;
 	}
+
+	footer p{
+		float: none;
+	}
+
 
 }
 
