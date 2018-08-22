@@ -101,7 +101,7 @@ aside#sidebar{
 }
 
 #profileimgDiv{
-	background: red;
+	
 	display: inline-block;
 	float: left;
 }
@@ -457,7 +457,10 @@ footer p{
 
 	#main{
 		margin: auto;
-		width: 70%;	
+		width: 70%;
+		min-height: 550px;
+
+
 	}
 
 	section#main{
