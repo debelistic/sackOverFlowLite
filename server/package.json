@@ -1,0 +1,23 @@
+{
+  "name": "apiendpoints",
+  "version": "1.0.0",
+  "description": "Endpoints for stackoverflow lite version",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debelistic/sackOverFlowLite.git"
+  },
+  "author": "Victor Awotidebe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/debelistic/sackOverFlowLite/issues"
+  },
+  "homepage": "https://github.com/debelistic/sackOverFlowLite#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
