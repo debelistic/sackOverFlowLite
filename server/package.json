@@ -24,10 +24,9 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "eslint": "^5.4.0"
-=======
+
+    "eslint": "^5.4.0",
     "nodemon": "^1.18.3"
->>>>>>> ft-get-all-questions-endpoint-159956274
+
   }
 }
