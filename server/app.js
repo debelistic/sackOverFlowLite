@@ -1,13 +1,14 @@
 import express from 'express';
-import bodyParser from 'bodyParser';
+import bodyParser from 'body-parser';
 
 import questions from './routes/questions';
 
-
-
 const app = express();
 
-app.use('/questions/', questions);
+app.use('/api/v/questions/', questions);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 
 const port = process.env.PORT || 3000
