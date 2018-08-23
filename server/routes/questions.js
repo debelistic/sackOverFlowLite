@@ -1,15 +1,23 @@
 import express from 'express';
-import data from '../data/data';
+import questions from '../data/data';
 
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
-	res.status(200).send({
-		success: "true",
-		message: "questions successful retrived",
-		questions: data
-	})
-})
+router.get('/', (req, res) => {
+	// res.status(200).send({
+	// 	success: "true",
+	// 	message: "questions successful retrived",
+	// 	questions: questions
+	// })
+
+	res.send(questions);
+});
+
+router.get('/:id', (req, res) => {
+	const question = questions.find(q => q.id === parseInt(req.params.id));
+	if(!question) res.status(404).send('question not fond');
+	res.send(question);
+});
 
 
 
