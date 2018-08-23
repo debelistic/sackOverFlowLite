@@ -1,6 +1,6 @@
 import express from 'express';
 
-const data = [
+const questions = [
   
     {
       id: 1,
@@ -85,4 +85,4 @@ const data = [
     }  
 ];
 
-export default data;
+export default questions;

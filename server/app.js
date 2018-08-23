@@ -1,6 +1,4 @@
 import express from 'express';
-
-
 import questions from './routes/questions';
 
 
@@ -9,7 +7,9 @@ const app = express();
 
 app.use('/questions/', questions);
 
-app.listen(3000);
-console.log('You are on port 3000');
+
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log('You are on port ' + port) )
+
 
 export default app;
