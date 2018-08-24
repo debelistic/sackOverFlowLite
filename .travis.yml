@@ -1,5 +1,4 @@
-before_install:
-  cd /server
+before_install: cd server
 language: node_js
 node_js:
   - "node"
