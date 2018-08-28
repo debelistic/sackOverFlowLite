@@ -6,10 +6,14 @@ import Questions from '../data/data';
 import App from '../app'
 import chai from 'chai';
 import chaiHttp from 'chai-http';
+import bodyParser from 'body-parser';
+
+
 
 const should = chai.should();
 
 chai.use(chaiHttp);
+App.use(bodyParser.json());
 
 describe('/GET questions', () => {
 	it('It should GET all questions in the database', (done) => {
@@ -25,8 +29,8 @@ describe('/GET questions', () => {
 
 describe('/GET questions/:id', () => {
 	it('It should GET questions with the specified id from database', (done) => {
-		chai.request(App)
-			.get('/api/v/questions/' + Questions(id))
+		
+			.get('/api/v/questions/:id')
 			.end((err, res) => {
 				res.should.have.status(200);
 				res.body.should.be.a('object');
@@ -58,14 +62,14 @@ describe('/POST questions', () => {
 });
 
 
-describe('/POST questions', () => {
+describe('/POST answers', () => {
 	it('It should POST all questions in the database', (done) => {
 		const newanswer = {			
 			content: 'Lorem ipsum',
 			username: 'fred'
 		};
 			chai.request(App)
-				.post('/api/v/questions/:id/answers')
+				.post('/api/v/questions/:id')
 				.send(newanswer)
 				.end((err, res) => {
 					res.should.have.status(200);
