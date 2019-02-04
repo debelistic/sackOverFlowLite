@@ -1,6 +1,6 @@
 import express from 'express';
 
-const questions = [
+let questions = [
   
     {
       id: 1,
