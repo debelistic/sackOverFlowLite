@@ -39,9 +39,9 @@ router.post('/', (req, res) => {
 	res.send(question);
 });
 
-router.post('/:id/answers', (req, res) => {
+router.put('/:id', (req, res) => {
 	
-	const answer = questions[req.params.id - 1].answers;
+	const answer = questions[req.params.id].answers;
 	const newanswer = {
 		id: answer.length +1,
 		content: req.body.content,
