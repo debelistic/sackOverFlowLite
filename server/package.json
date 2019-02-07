@@ -4,7 +4,7 @@
   "description": "Endpoints for stackoverflow lite version",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register --recursive ./test/",
     "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
   },
   "repository": {
