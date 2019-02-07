@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
 		content: req.body.content
 	}
 	questions.push(question);
-	res.send(questions);
+	res.send(question);
 });
 
 router.put('/:id', (req, res) => {
@@ -48,7 +48,7 @@ router.put('/:id', (req, res) => {
 		username: req.body.username
 	};
 	answer.push(newanswer);	
-	res.send(answer);
+	res.send(newanswer);
 });
 
 
