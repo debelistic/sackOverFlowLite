@@ -4,7 +4,7 @@
   "description": "Endpoints for stackoverflow lite version",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register --recursive ./test/",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register --recursive --exit ./test/",
     "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
   },
   "repository": {
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "body-parser": "^1.18.3",
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "chai-http": "^4.0.0",
     "eslint": "^5.4.0",
     "mocha": "^5.2.0",
