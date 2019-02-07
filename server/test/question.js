@@ -50,7 +50,7 @@ describe('/GET questions/:id', () => {
 
 describe('/POST question', () => {
 	it('It should POST a question to the database', (done) => {
-		const question = {			
+		const testQuestion = {			
       		title: 'What is dynamic data?',
       		content: 'A found out there is dyanmic data in javascript, what does it mean.',
       		timestamp: '12:89pm',      		
@@ -58,7 +58,7 @@ describe('/POST question', () => {
 		}
 			chai.request(app)
 				.post('/api/v/questions')
-				.send(question)
+				.send(testQuestion)
 				.end((err, res) => {
 					res.should.have.status(200);
 					res.body.should.be.a('object');
