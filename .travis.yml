@@ -1,3 +1,7 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=3c06e6c896483b1436d39a14d793dc8c3acea0672a6b2ace35545a8e3bc1324c
+
 before_script: 
   - cd server
   - npm install mocha
@@ -10,5 +14,6 @@ node_js:
   - "stable"  
 script:
   - npm test
+  - bundle exec rspec
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
