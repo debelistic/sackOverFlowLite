@@ -4,7 +4,8 @@
   "description": "Endpoints for stackoverflow lite version",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers js:babel-register --recursive --exit ./test/",
+    "test": "nyc ./node_modules/.bin/mocha --compilers js:babel-register --recursive --exit ./test/",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
     "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "eslint": "^5.4.0",
     "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "nyc": "^13.2.0"
   }
 }
