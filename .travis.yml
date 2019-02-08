@@ -1,5 +1,4 @@
-before_script: 
-  - cd server
+before_script:
   - npm install mocha
   - npm install chai
   - npm install codeclimate-test-reporter nyc -g
