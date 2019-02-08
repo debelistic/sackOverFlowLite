@@ -81,7 +81,7 @@ router.post('/:id/answers', (req, res) => {
 		timeStamp: new Date()
 	}
 	question.answers.push(answer);
-	res.send(question.answers);
+	res.send(question.answers[question.answers.length - 1]);
 });
 
 export default router;
