@@ -2,7 +2,7 @@ before_script:
   - cd server
   - npm install mocha
   - npm install chai
-  - npm nyc
+  - npm install nyc
 language: node_js
 node_js:
   - "stable" 
