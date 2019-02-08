@@ -47,6 +47,26 @@ describe('/GET questions/:id', () => {
 	});
 });
 
+describe('/GET questions/:id/answers', () => {
+	it('It should GET answers to a question from database', (done) => {
+		const question = {
+			id: Questions.length + 1,
+      		title: 'What is big machine?',
+      		content: 'A found out there is dyanmic data in javascript, what does it mean.',
+      		timestamp: 'Sep 8, 2016: 12:45pm',
+      		username: 'debelistic',
+		}
+		Questions.push(question);
+		chai.request(app)		
+			.get('/api/v/questions/' + question.id + '/answers')
+			.end((err, res) => {
+				res.should.have.status(200);
+				res.body.should.be.a('object');
+			done();
+		});
+	});
+});
+
 
 describe('/POST question', () => {
 	it('It should POST a question to the database', (done) => {
@@ -70,8 +90,8 @@ describe('/POST question', () => {
 });
 
 
-describe('/PUT answers', () => {
-	it('It should update answers to a question in the database', (done) => {
+describe('/POST answers', () => {
+	it('It should post answer to a question in the database', (done) => {
 		const question = {
 			id: Questions.length + 1,
       		title: 'What is big machine?',
@@ -83,13 +103,14 @@ describe('/PUT answers', () => {
 		const newanswer = {	
 			id: question.answers.length + 1,	
 			content: 'Lorem ipsum',
-			username: 'fred'
+			username: 'fred',
+			timeStamp: new Date ()
 		};
 
 		question.answers.push(newanswer);
 		Questions.push(question);
 			chai.request(app)
-				.put('/api/v/questions/' + newanswer.id)
+				.post('/api/v/questions/' + question.id + '/answers')
 				.send(newanswer)
 				.end((err, res) => {
 					res.should.have.status(200);

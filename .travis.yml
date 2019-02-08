@@ -2,8 +2,16 @@ before_script:
   - cd server
   - npm install mocha
   - npm install chai
+  - npm install nyc
 language: node_js
 node_js:
-  - "stable"  
+  - "stable" 
+addons:
+  code_climate:
+    repo_token: 3c06e6c896483b1436d39a14d793dc8c3acea0672a6b2ace35545a8e3bc1324c
+
 script:
   - npm test
+  - nyc --reporter=lcov --reporter=text-lcov
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
